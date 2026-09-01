@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Transparência Municipal — Prefeitura de Bom Jesus/RN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Painel de transparência da Prefeitura de Bom Jesus/RN: receitas, despesas, contratos e canais de fiscalização.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="a11y-bar">
+  <div class="container">
+    <button data-fonte-menos aria-label="Diminuir fonte">A<span style="font-size:10px">-</span></button>
+    <button data-fonte-mais aria-label="Aumentar fonte">A<span style="font-size:14px">+</span></button>
+    <div class="divider"></div>
+    <button data-contraste>Alto contraste</button>
+    <div class="divider"></div>
+    <button>VLibras</button>
+    <button>Mapa do site</button>
+    <span class="gov-tag">bomjesus.rn.gov.br</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="selo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9M9 10v9M15 10v9M19 10v9M3 19h18"/></svg></span>
+      <span class="txt"><span class="eyebrow">Prefeitura Municipal de</span><strong>Bom Jesus · RN</strong></span>
+    </a>
+    <form class="search-form" role="search" onsubmit="return false;">
+      <input type="search" placeholder="Buscar serviço, notícia ou página...">
+      <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+    </form>
+    <div class="selos-parceiros">
+      <span title="Selo UNICEF">UNICEF</span>
+      <span title="Portal da Transparência">TRANSP.</span>
+    </div>
+  </div>
+</header>
+
+<nav class="site" aria-label="Navegação principal">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#cidade">A Cidade</a></li>
+      <li><a href="#prefeitura">A Prefeitura</a></li>
+      <li><a href="transparencia.html" class="active">Transparência Municipal</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="#contato">Fale Conosco</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="conteudo">
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Portal da Transparência</span>
+          <h1 class="slab" style="font-size:32px;margin-top:6px;">Prestação de contas do município</h1>
+        </div>
+        <div class="filtros" style="margin-bottom:0;">
+          <button class="filtro ativo">Exercício 2026</button>
+          <a class="filtro" href="#" style="text-decoration:none;display:flex;align-items:center;">Baixar relatório (PDF) ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="indicadores">
+        <div class="indicador"><span class="rotulo">Receita arrecadada</span><div class="valor">R$ 4,8M</div><div class="variacao">↑ 6% vs. 2025</div></div>
+        <div class="indicador"><span class="rotulo">Despesa empenhada</span><div class="valor">R$ 4,1M</div><div class="variacao">↑ 3% vs. 2025</div></div>
+        <div class="indicador"><span class="rotulo">Execução orçamentária</span><div class="valor">68%</div><div class="variacao">dentro do previsto</div></div>
+        <div class="indicador"><span class="rotulo">Contratos vigentes</span><div class="valor">37</div><div class="variacao">17 em licitação</div></div>
+      </div>
+
+      <div class="painel">
+        <div class="painel-head">
+          <h3>Receita x despesa por mês</h3>
+          <div class="legenda">
+            <span><i style="background:var(--verde)"></i>Receita</span>
+            <span><i style="background:var(--ocre)"></i>Despesa</span>
+          </div>
+        </div>
+        <div class="grafico">
+          <div class="mes"><div class="barras"><div class="barra receita" style="height:62%"></div><div class="barra despesa" style="height:48%"></div></div><span class="rotulo-mes">Fev</span></div>
+          <div class="mes"><div class="barras"><div class="barra receita" style="height:70%"></div><div class="barra despesa" style="height:55%"></div></div><span class="rotulo-mes">Mar</span></div>
+          <div class="mes"><div class="barras"><div class="barra receita" style="height:58%"></div><div class="barra despesa" style="height:50%"></div></div><span class="rotulo-mes">Abr</span></div>
+          <div class="mes"><div class="barras"><div class="barra receita" style="height:85%"></div><div class="barra despesa" style="height:66%"></div></div><span class="rotulo-mes">Mai</span></div>
+          <div class="mes"><div class="barras"><div class="barra receita" style="height:64%"></div><div class="barra despesa" style="height:58%"></div></div><span class="rotulo-mes">Jun</span></div>
+          <div class="mes"><div class="barras"><div class="barra receita" style="height:78%"></div><div class="barra despesa" style="height:62%"></div></div><span class="rotulo-mes">Jul</span></div>
+        </div>
+        <p class="aviso-fictício">Dados fictícios, gerados apenas para demonstrar a interação do painel — o projeto não se conecta a sistemas reais de execução orçamentária (fora do escopo).</p>
+      </div>
+
+      <div class="grid-servicos" style="grid-template-columns:repeat(2,1fr); margin-top:30px;">
+        <a class="card-servico" href="servicos.html#sic">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4V4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+          <h3>SIC e E-SIC</h3>
+          <p>Peça informações públicas com base na Lei de Acesso à Informação e acompanhe o prazo de resposta.</p>
+          <span class="publico">Cidadão</span>
+        </a>
+        <a class="card-servico" href="servicos.html#licitacoes">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+          <h3>Processos Licitatórios</h3>
+          <p>Editais abertos, contratos assinados e o histórico de compras públicas do município.</p>
+          <span class="publico">Empresas · Fornecedores</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site" id="contato">
+  <div class="container">
+    <div>
+      <h4>Prefeitura de Bom Jesus/RN</h4>
+      <p>Rua Presidente Vargas, s/n — Centro<br>Bom Jesus/RN, CEP 59.360-000</p>
+      <p>Seg. a sex., 7h às 13h<br>(84) 3000-0000</p>
+      <div class="redes">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 20l1.4-4A8 8 0 1 1 9 19l-5 1z"/><path d="M9 10c0 3 2 5 5 5"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#">A Prefeitura</a></li>
+        <li><a href="#">Secretarias</a></li>
+        <li><a href="#">Legislação municipal</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Atalhos</h4>
+      <ul>
+        <li><a href="#">Lei de Acesso à Informação</a></li>
+        <li><a href="servicos.html#ouvidoria">Ouvidoria</a></li>
+        <li><a href="noticias.html#diario">Diário Oficial</a></li>
+        <li><a href="servicos.html#licitacoes">Licitações</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Acessibilidade</h4>
+      <ul>
+        <li><a href="#">Mapa do site</a></li>
+        <li><a href="#">Recursos assistivos</a></li>
+        <li><a href="#">Ouvidoria de acessibilidade</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="rodape-base">Prefeitura Municipal de Bom Jesus/RN · Protótipo acadêmico — IFRN · 2026</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

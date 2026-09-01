@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Notícias — Prefeitura de Bom Jesus/RN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Notícias, comunicados e edições do Diário Oficial da Prefeitura de Bom Jesus/RN.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="a11y-bar">
+  <div class="container">
+    <button data-fonte-menos aria-label="Diminuir fonte">A<span style="font-size:10px">-</span></button>
+    <button data-fonte-mais aria-label="Aumentar fonte">A<span style="font-size:14px">+</span></button>
+    <div class="divider"></div>
+    <button data-contraste>Alto contraste</button>
+    <div class="divider"></div>
+    <button>VLibras</button>
+    <button>Mapa do site</button>
+    <span class="gov-tag">bomjesus.rn.gov.br</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="selo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9M9 10v9M15 10v9M19 10v9M3 19h18"/></svg></span>
+      <span class="txt"><span class="eyebrow">Prefeitura Municipal de</span><strong>Bom Jesus · RN</strong></span>
+    </a>
+    <form class="search-form" role="search" onsubmit="return false;">
+      <input type="search" placeholder="Buscar serviço, notícia ou página...">
+      <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+    </form>
+    <div class="selos-parceiros">
+      <span title="Selo UNICEF">UNICEF</span>
+      <span title="Portal da Transparência">TRANSP.</span>
+    </div>
+  </div>
+</header>
+
+<nav class="site" aria-label="Navegação principal">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#cidade">A Cidade</a></li>
+      <li><a href="#prefeitura">A Prefeitura</a></li>
+      <li><a href="transparencia.html">Transparência Municipal</a></li>
+      <li><a href="noticias.html" class="active">Notícias</a></li>
+      <li><a href="#contato">Fale Conosco</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="conteudo">
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Comunicação</span>
+      <h1 class="slab" style="font-size:32px;margin-top:6px;">Notícias e Diário Oficial</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <article class="destaque-noticia">
+        <div class="foto"><span class="tag">Destaque</span></div>
+        <div class="txt">
+          <span class="data">18 de agosto de 2026 · Saúde</span>
+          <h3>Unidade Básica de Saúde do bairro Alto passa a funcionar em horário estendido</h3>
+          <p>Atendimento de enfermagem e clínica geral vai até as 20h de segunda a sexta, ampliando o acesso para quem trabalha durante o dia.</p>
+          <a class="ver-todos" href="#" style="margin-top:6px;">Ler notícia completa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <div class="filtros" role="group" aria-label="Filtrar notícias por categoria">
+        <button class="filtro ativo" data-filtro="todos" data-alvo="#lista-noticias">Todas</button>
+        <button class="filtro" data-filtro="saude" data-alvo="#lista-noticias">Saúde</button>
+        <button class="filtro" data-filtro="educacao" data-alvo="#lista-noticias">Educação</button>
+        <button class="filtro" data-filtro="obras" data-alvo="#lista-noticias">Obras</button>
+        <button class="filtro" data-filtro="eventos" data-alvo="#lista-noticias">Eventos</button>
+      </div>
+
+      <div class="grid-noticias" id="lista-noticias">
+        <a class="card-noticia" data-categoria="educacao" href="#">
+          <div class="foto" style="background:linear-gradient(135deg,#E3D3A6,#B8811F);"></div>
+          <div class="txt"><span class="data">15 ago 2026 · Educação</span><h3>Matrículas 2027 da rede municipal começam em setembro pelo Portal SIGEduc</h3><p>Pais e responsáveis poderão fazer todo o processo pela internet.</p></div>
+        </a>
+        <a class="card-noticia" data-categoria="obras" href="#">
+          <div class="foto" style="background:linear-gradient(135deg,#C7CBBF,#8B9385);"></div>
+          <div class="txt"><span class="data">11 ago 2026 · Obras</span><h3>Recapeamento da Rua Principal do Centro entra na segunda etapa</h3><p>Trecho entre a praça e o mercado público deve ficar pronto em outubro.</p></div>
+        </a>
+        <a class="card-noticia" data-categoria="eventos" href="#">
+          <div class="foto" style="background:linear-gradient(135deg,#A8412B,#C97A56);"></div>
+          <div class="txt"><span class="data">7 ago 2026 · Eventos</span><h3>Prefeitura abre inscrições para a Feira do Produtor Rural</h3><p>Agricultores familiares podem reservar barraca até 30 de agosto.</p></div>
+        </a>
+        <a class="card-noticia" data-categoria="saude" href="#">
+          <div class="foto" style="background:linear-gradient(135deg,#0F4C3A,#4E8672);"></div>
+          <div class="txt"><span class="data">4 ago 2026 · Saúde</span><h3>Campanha de vacinação contra a gripe é prorrogada até 20 de agosto</h3><p>Postos de saúde atendem sem necessidade de agendamento.</p></div>
+        </a>
+        <a class="card-noticia" data-categoria="educacao" href="#">
+          <div class="foto" style="background:linear-gradient(135deg,#DDD6C4,#B8811F);"></div>
+          <div class="txt"><span class="data">29 jul 2026 · Educação</span><h3>Escolas municipais recebem novos kits de material didático</h3><p>Entrega abrange as 12 unidades da zona urbana e rural.</p></div>
+        </a>
+        <a class="card-noticia" data-categoria="obras" href="#">
+          <div class="foto" style="background:linear-gradient(135deg,#4B564F,#1B2320);"></div>
+          <div class="txt"><span class="data">22 jul 2026 · Obras</span><h3>Praça da Matriz recebe nova iluminação em LED</h3><p>Investimento também inclui bancos e paisagismo revitalizado.</p></div>
+        </a>
+      </div>
+
+      <div class="paginacao">
+        <a href="#" class="atual">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <span>···</span>
+        <a href="#">8</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="diario" style="background:var(--branco); border-top:1px solid var(--linha);">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Publicações oficiais</span>
+          <h2>Diário Oficial do Município</h2>
+        </div>
+      </div>
+      <div class="lista-protocolo">
+        <a class="item-protocolo" href="#">
+          <span class="num">Nº 1248/2026</span>
+          <span class="desc">Decreto que institui o horário estendido nas Unidades Básicas de Saúde</span>
+          <span class="baixar">Baixar PDF ↓</span>
+        </a>
+        <a class="item-protocolo" href="#">
+          <span class="num">Nº 1247/2026</span>
+          <span class="desc">Edital de convocação — concurso público 001/2025, cargo de professor</span>
+          <span class="baixar">Baixar PDF ↓</span>
+        </a>
+        <a class="item-protocolo" href="#">
+          <span class="num">Nº 1246/2026</span>
+          <span class="desc">Portaria de nomeação de servidores efetivos — Secretaria de Educação</span>
+          <span class="baixar">Baixar PDF ↓</span>
+        </a>
+        <a class="item-protocolo" href="#">
+          <span class="num">Nº 1245/2026</span>
+          <span class="desc">Extrato de contrato — recapeamento asfáltico da Rua Principal</span>
+          <span class="baixar">Baixar PDF ↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site" id="contato">
+  <div class="container">
+    <div>
+      <h4>Prefeitura de Bom Jesus/RN</h4>
+      <p>Rua Presidente Vargas, s/n — Centro<br>Bom Jesus/RN, CEP 59.360-000</p>
+      <p>Seg. a sex., 7h às 13h<br>(84) 3000-0000</p>
+      <div class="redes">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 20l1.4-4A8 8 0 1 1 9 19l-5 1z"/><path d="M9 10c0 3 2 5 5 5"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#">A Prefeitura</a></li>
+        <li><a href="#">Secretarias</a></li>
+        <li><a href="#">Legislação municipal</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Atalhos</h4>
+      <ul>
+        <li><a href="#">Lei de Acesso à Informação</a></li>
+        <li><a href="servicos.html#ouvidoria">Ouvidoria</a></li>
+        <li><a href="#diario">Diário Oficial</a></li>
+        <li><a href="servicos.html#licitacoes">Licitações</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Acessibilidade</h4>
+      <ul>
+        <li><a href="#">Mapa do site</a></li>
+        <li><a href="#">Recursos assistivos</a></li>
+        <li><a href="#">Ouvidoria de acessibilidade</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="rodape-base">Prefeitura Municipal de Bom Jesus/RN · Protótipo acadêmico — IFRN · 2026</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Serviços — Prefeitura de Bom Jesus/RN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Todos os serviços digitais da Prefeitura de Bom Jesus/RN em um só lugar, filtrados por perfil de usuário.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<div class="a11y-bar">
+  <div class="container">
+    <button data-fonte-menos aria-label="Diminuir fonte">A<span style="font-size:10px">-</span></button>
+    <button data-fonte-mais aria-label="Aumentar fonte">A<span style="font-size:14px">+</span></button>
+    <div class="divider"></div>
+    <button data-contraste>Alto contraste</button>
+    <div class="divider"></div>
+    <button>VLibras</button>
+    <button>Mapa do site</button>
+    <span class="gov-tag">bomjesus.rn.gov.br</span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="selo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v9M9 10v9M15 10v9M19 10v9M3 19h18"/></svg></span>
+      <span class="txt"><span class="eyebrow">Prefeitura Municipal de</span><strong>Bom Jesus · RN</strong></span>
+    </a>
+    <form class="search-form" role="search" onsubmit="return false;">
+      <input type="search" placeholder="Buscar serviço, notícia ou página...">
+      <button type="submit" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></button>
+    </form>
+    <div class="selos-parceiros">
+      <span title="Selo UNICEF">UNICEF</span>
+      <span title="Portal da Transparência">TRANSP.</span>
+    </div>
+  </div>
+</header>
+
+<nav class="site" aria-label="Navegação principal">
+  <div class="container">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#cidade">A Cidade</a></li>
+      <li><a href="#prefeitura">A Prefeitura</a></li>
+      <li><a href="transparencia.html">Transparência Municipal</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="#contato">Fale Conosco</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="conteudo">
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <span class="eyebrow">Central de serviços</span>
+      <h1 class="slab" style="font-size:32px;margin-top:6px;">Todos os serviços da Prefeitura</h1>
+      <p style="max-width:60ch;color:var(--tinta-suave);margin-top:10px;">Filtre por quem você é para chegar mais rápido ao que precisa — o objetivo é resolver em poucos cliques o que antes exigia navegar por vários menus.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filtros" role="group" aria-label="Filtrar serviços por perfil">
+        <button class="filtro ativo" data-filtro="todos" data-alvo="#lista-servicos">Todos</button>
+        <button class="filtro" data-filtro="cidadao" data-alvo="#lista-servicos">Cidadão</button>
+        <button class="filtro" data-filtro="servidor" data-alvo="#lista-servicos">Servidor</button>
+        <button class="filtro" data-filtro="empresa" data-alvo="#lista-servicos">Empresa / Fornecedor</button>
+      </div>
+
+      <div class="grid-servicos" id="lista-servicos">
+
+        <a class="card-servico" id="tributos" data-categoria="cidadao" href="#tributos">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l3 3v17H6z"/><path d="M15 2v3h3"/><path d="M9 12h6M9 16h6"/></svg></span>
+          <h3>Emissão de Tributos</h3>
+          <p>Geração de guias de IPTU, ISS e demais tributos municipais para pagamento online.</p>
+          <span class="publico">Cidadão · Contribuinte</span>
+        </a>
+
+        <a class="card-servico" data-categoria="empresa" href="#bjprev">
+          <span class="carimbo" id="bjprev"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Portal BJPREV</h3>
+          <p>Acesso ao regime próprio de previdência dos servidores do município.</p>
+          <span class="publico">Servidores públicos</span>
+        </a>
+
+        <a class="card-servico" data-categoria="cidadao" href="transparencia.html">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+          <h3>Portal da Transparência</h3>
+          <p>Consulta à execução orçamentária, financeira e prestação de contas do município.</p>
+          <span class="publico">Cidadão · Órgãos de controle</span>
+        </a>
+
+        <a class="card-servico" id="sic" data-categoria="cidadao" href="#sic">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4V4z"/><path d="M8 9h8M8 13h5"/></svg></span>
+          <h3>SIC e E-SIC</h3>
+          <p>Canal para solicitação de informações públicas com base na Lei de Acesso à Informação.</p>
+          <span class="publico">Cidadão</span>
+        </a>
+
+        <a class="card-servico" id="licitacoes" data-categoria="empresa" href="#licitacoes">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></span>
+          <h3>Processos Licitatórios</h3>
+          <p>Divulgação de editais, avisos, contratos e demais atos licitatórios.</p>
+          <span class="publico">Empresas · Fornecedores</span>
+        </a>
+
+        <a class="card-servico" id="diario" data-categoria="cidadao" href="noticias.html#diario">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h12v14a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V4z"/><path d="M8 8h6M8 12h6M8 16h4"/></svg></span>
+          <h3>Diário Oficial do Município</h3>
+          <p>Publicação de leis, decretos e atos normativos da administração.</p>
+          <span class="publico">Cidadão · Servidores</span>
+        </a>
+
+        <a class="card-servico" id="contracheque" data-categoria="servidor" href="#contracheque">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h15a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h11"/><path d="M16 13h3v3h-3z"/></svg></span>
+          <h3>Contracheque Online</h3>
+          <p>Consulta à ficha financeira individual do servidor municipal.</p>
+          <span class="publico">Servidores públicos</span>
+        </a>
+
+        <a class="card-servico" data-categoria="servidor" href="#consignet">
+          <span class="carimbo" id="consignet"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="2.3"/><circle cx="17" cy="17" r="2.3"/><path d="M18 6 6 18"/></svg></span>
+          <h3>Portal Consignet</h3>
+          <p>Simulação e acompanhamento de empréstimos consignados de servidores.</p>
+          <span class="publico">Servidores públicos</span>
+        </a>
+
+        <a class="card-servico" data-categoria="cidadao" href="#ouvidoria">
+          <span class="carimbo" id="ouvidoria"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l6 4V6L6 10H3z"/><path d="M16 9a3 3 0 0 1 0 6M19 6a7 7 0 0 1 0 12"/></svg></span>
+          <h3>Ouvidoria Municipal</h3>
+          <p>Canal direto de comunicação entre o cidadão e a Prefeitura.</p>
+          <span class="publico">Cidadão</span>
+        </a>
+
+        <a class="card-servico" id="sigeduc" data-categoria="cidadao" href="#sigeduc">
+          <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg></span>
+          <h3>Portal SIGEduc</h3>
+          <p>Matrícula, boletins e informações da rede municipal de ensino.</p>
+          <span class="publico">Estudantes · Famílias</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--branco); border-top:1px solid var(--linha);">
+    <div class="container">
+      <span class="eyebrow">Como funciona</span>
+      <h2 style="margin-top:6px;">Detalhe de um serviço</h2>
+      <p style="max-width:60ch;color:var(--tinta-suave);margin-top:8px 0 24px;">Simulação de tela ao abrir "Emissão de Tributos" — cada serviço segue o mesmo padrão: o que é, documentos, passo a passo e o link direto de acesso.</p>
+
+      <div class="painel" style="margin-top:24px;">
+        <div class="painel-head">
+          <div style="display:flex; align-items:center; gap:14px;">
+            <span class="carimbo"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l3 3v17H6z"/><path d="M15 2v3h3"/><path d="M9 12h6M9 16h6"/></svg></span>
+            <div><h3>Emissão de Tributos</h3><span style="font-size:13px;color:var(--tinta-suave);">Secretaria de Finanças</span></div>
+          </div>
+          <a class="btn-mini" style="border-radius:20px;" href="#">Acessar serviço →</a>
+        </div>
+        <p style="color:var(--tinta-suave);font-size:14.5px;">Gere a 2ª via de IPTU, ISS ou taxas municipais informando a inscrição do imóvel ou CPF/CNPJ do contribuinte. O pagamento pode ser feito por PIX, boleto ou cartão.</p>
+        <div style="display:flex; gap:28px; margin-top:18px; flex-wrap:wrap;">
+          <div>
+            <span style="font:600 11px 'IBM Plex Mono',monospace; color:var(--ocre); text-transform:uppercase;">Documentos</span>
+            <p style="font-size:13.5px; margin-top:6px;">Inscrição imobiliária ou CPF/CNPJ</p>
+          </div>
+          <div>
+            <span style="font:600 11px 'IBM Plex Mono',monospace; color:var(--ocre); text-transform:uppercase;">Prazo</span>
+            <p style="font-size:13.5px; margin-top:6px;">Emissão imediata</p>
+          </div>
+          <div>
+            <span style="font:600 11px 'IBM Plex Mono',monospace; color:var(--ocre); text-transform:uppercase;">Canal</span>
+            <p style="font-size:13.5px; margin-top:6px;">100% online</p>
+          </div>
+        </div>
+      </div>
+      <p class="aviso-fictício">Tela de exemplo — o protótipo não se conecta ao sistema real de tributos da Prefeitura (integração fora do escopo do projeto).</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site" id="contato">
+  <div class="container">
+    <div>
+      <h4>Prefeitura de Bom Jesus/RN</h4>
+      <p>Rua Presidente Vargas, s/n — Centro<br>Bom Jesus/RN, CEP 59.360-000</p>
+      <p>Seg. a sex., 7h às 13h<br>(84) 3000-0000</p>
+      <div class="redes">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M14 9h3V5h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M4 20l1.4-4A8 8 0 1 1 9 19l-5 1z"/><path d="M9 10c0 3 2 5 5 5"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="#">A Prefeitura</a></li>
+        <li><a href="#">Secretarias</a></li>
+        <li><a href="#">Legislação municipal</a></li>
+        <li><a href="#">Trabalhe conosco</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Atalhos</h4>
+      <ul>
+        <li><a href="#">Lei de Acesso à Informação</a></li>
+        <li><a href="#ouvidoria">Ouvidoria</a></li>
+        <li><a href="noticias.html#diario">Diário Oficial</a></li>
+        <li><a href="#licitacoes">Licitações</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Acessibilidade</h4>
+      <ul>
+        <li><a href="#">Mapa do site</a></li>
+        <li><a href="#">Recursos assistivos</a></li>
+        <li><a href="#">Ouvidoria de acessibilidade</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="rodape-base">Prefeitura Municipal de Bom Jesus/RN · Protótipo acadêmico — IFRN · 2026</div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
